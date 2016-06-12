@@ -1,0 +1,864 @@
+@import _mnu
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+  font-weight: inherit
+  font-style: inherit
+  font-size: 100%
+  font-family: inherit
+  vertical-align: baseline
+
+\:focus
+  outline: 0
+
+body
+  line-height: 1
+  color: black
+  background: white
+
+ol, ul
+  list-style: none
+
+table
+  border-collapse: separate
+  border-spacing: 0
+
+caption, th, td
+  text-align: left
+  font-weight: normal
+
+blockquote
+  &:before, &:after
+    content: ""
+
+q
+  &:before, &:after
+    content: ""
+
+blockquote, q
+  quotes: "" ""
+
+li 
+	list-style: none
+
+ul 
+	padding: 0
+	margin: 0
+
+@import _fonts
+
+.wrapper 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	background: url("../img/bg.png") no-repeat top center
+	background-size:  100%
+
+.red_line 
+	width: 100%
+	overflow: hidden
+	background-color: #F03226 
+	color: #F03226 
+	padding: 11px  0
+	height: 37px
+	box-sizing: border-box
+
+.w_1200
+	max-width: 1200px
+	width: 100%
+	margin: auto
+	//overflow: hidden
+	box-sizing: border-box
+
+b, strong 
+	font-family: MuseoSansCyrl700
+
+.top
+	position: relative
+	border-bottom: 1px solid #3A9ACD 
+
+.top, .top .w_1200 
+	height: 103px
+
+.top .w_1200 
+	position: relative
+
+.logo 
+	margin-top: 18px
+	display: block
+ 			
+.col-mnu  
+	margin-top: 17px
+	box-sizing: border-box
+
+.top_mnu
+	float: right
+	position: relative
+	z-index: 1
+	ul
+		margin: 0
+	li 
+		float: left
+		list-style: none
+		line-height: 1
+		margin: 0 9px
+		&:first-child 
+			margin-left: 0
+		&:last-child 
+			margin-right: 0
+				
+	a 		
+		color: #fff
+		display: block
+		font-family: RobotoM
+		font-size: 16px
+		padding: 7px 9px
+		line-height: 1
+		box-sizing: border-box
+		text-transform: uppercase
+		text-align: center
+		&:hover
+			text-decoration: none
+			background-color: #f03226
+			border-radius: 4px
+			
+			
+.active a 
+	text-decoration: none
+	background-color: #f03226
+	border-radius: 4px
+	
+
+.top_contacts 
+	color: #000 
+	margin-top: 25px
+
+.top_phone
+	color: #FFF 
+	font-family: MuseoSansCyrl700
+	font-size: 18px
+	text-transform: uppercase
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	padding-left: 22px
+	float: left
+	
+.top_mail
+	box-sizing: border-box
+	float: left
+	margin-left: 40px
+	a
+		color: #FFF 
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		float: left
+		background: url("../img/top_icon_mail.png") no-repeat left center
+		padding-left: 22px
+		
+.top_adress 
+	color: #FFF 
+	float: right
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	padding-left: 22px
+	font-family: MuseoSansCyrl500
+	font-size: 12px
+	font-weight: 500 
+	line-height: 1.3
+	min-height: 16px
+
+.nopadding 
+	padding: 0 !important
+	
+.nopadding-l 
+	padding-left: 0 !important
+
+.nopadding-r
+	padding-right: 0 !important
+
+.slider_wrap 
+	width: 100%
+	margin: auto
+	overflow: hidden
+	position: relative
+	background-color: #36A6CF 
+	padding-top: 5px
+	.like_h2 
+		color: white
+		font-family: MuseoSansCyrl900
+		font-size: 24px
+		margin-bottom: 12px
+		margin-top: 0
+
+.slider 
+	max-width: 1170px
+	margin: auto
+	min-height: 265px
+
+	.slide 
+		min-height: 265px
+	
+
+.slider_ul 
+	z-index: 10
+
+.slider_text
+	position: absolute
+	top: 35px
+	left: 70px
+	li
+		color: white
+		font-family: MuseoSansCyrl300
+		font-size: 16px
+		margin-bottom: 0px
+		line-height: 1
+		&:before 
+			content: "— " 
+			color: white
+			font-family: MuseoSansCyrl700
+			font-size: 25px
+			margin-right: 10px
+
+.order
+	height: 40px
+	box-sizing: border-box
+	background-color: rgb(255, 240, 0)
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%)
+	border-radius: 4px
+	box-shadow: 0 0 10px rgba(242, 148, 0, 0.75)
+	display: block
+	position: absolute
+	left: 70px
+	bottom: 30px
+	color: black
+	font-family: MuseoSansCyrl300
+	font-size: 16px
+	text-align: center
+	text-decoration: none
+	padding: 12px 20px
+	&:hover 
+		text-decoration: none
+		color: #000 
+	&:focus
+		text-decoration: none
+		color: #000 
+
+/**************************************************/
+.slider
+  position: relative
+  width: 100%
+  overflow: hidden
+  
+.top_slider_wrap
+	margin-bottom: 30px
+
+.slides
+  height: 100% 
+  overflow: hidden
+  transition: all 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
+
+.slide
+  height: 100%
+  float: left
+  clear: none
+  position: relative
+
+.box 
+	position: relative
+	font-size: 0	
+
+.slider-arrow
+  position: absolute
+  display: block
+  margin-bottom: -20px
+  padding: 20px
+  background-color: #000
+  opacity: 0.3
+  text-decoration: none
+  color: #FFF
+  font-family: Verdana
+  border-radius: 3px
+  &:hover
+    opacity: 0.5
+
+.slider-arrow--right
+  bottom: 50%
+  right: 0
+
+.slider-arrow--left
+  bottom: 50%
+  left: 0
+
+.slider-nav
+  position: absolute
+  bottom: 15px
+  z-index: 100 
+
+.slider-nav__item
+  width: 7px
+  height: 7px
+  float: left
+  clear: none
+  display: block
+  margin: 0 1.5px
+  background: #a6f1ff
+  border-radius: 50px
+  &:focus 
+  	outline: none 		
+  
+
+.slider-nav__item--current
+  background-color: #fff
+
+.slider-arrow
+	height: 44px
+	width: 22px
+	background-color: transparent 
+	line-height: 1
+	opacity: 1
+	bottom: 115px
+
+.slider-arrow.slider-arrow--right
+	background: url("../img/arr_r.png") no-repeat 0 0
+	right: 0
+.slider-arrow.slider-arrow--left 
+	background: url("../img/arr_l.png") no-repeat 0 0
+	left: 0
+
+
+/**************************************************/
+.col-left-top-mnu 
+	overflow: hidden
+
+.left_top_mnu_wrap 
+	width: 100%	
+
+.left_mnu._top 
+	overflow: hidden
+	width: 100%
+	margin-top: 25px
+	margin-bottom: 0
+	padding-bottom: 0
+
+.left_mnu 
+	margin-bottom: 20px
+	box-sizing: border-box
+	padding: 0
+	.like_h2
+		font-family: MuseoSansCyrl900
+		color: white
+		padding: 20px
+		font-size: 18px
+	li
+		float: left
+		box-sizing: border-box
+		margin-right: 2px
+		margin-bottom: 11px
+		
+	a 
+		color: #caedff
+		font-family: Roboto
+		font-size: 15px
+		line-height: 30px
+		box-sizing: border-box
+		line-height: 1
+		display: block
+		padding: 5px 10px
+		text-decoration: underline
+		border: 1px solid transparent
+		border-radius: 4px
+		&:hover 
+			color: #FFF
+			text-decoration: none
+			border: 1px solid #fff
+	.active 
+		a
+			color: #FFF
+			text-decoration: none
+			border: 1px solid #fff
+			background: none  
+
+.about 
+	border-radius:  4px
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box
+	background-color: #FFF 
+	margin-bottom: 25px
+	background: url("../img/about_bg.png") no-repeat bottom center
+	min-height: 454px
+	box-sizing: border-box
+		
+.main_content 
+	padding-bottom: 30px
+	overflow: hidden
+	padding-top: 10px
+		
+.content 
+	float: right
+	width: 870px
+	color: rgb(47, 47, 47)
+	font-family: MuseoSansCyrl300
+	font-size: 15px
+	line-height: 21px
+	p 
+		margin-bottom: 20px
+		overflow: hidden
+		&:last-child 
+			margin-bottom: 0
+
+.banner 
+	margin-bottom: 25px	
+	
+h1 
+	color: #2f2f2f
+	font-family: Roboto
+	font-size: 36px
+	margin-bottom: 20px
+	line-height: 1
+.content
+	h2
+		color: #2f2f2f
+		font-family: Roboto
+		font-size: 30px
+		margin-bottom: 20px
+	h3
+		color: #2f2f2f
+		font-family: Roboto
+		font-size: 24px
+		margin-bottom: 20px
+
+.orange_left 
+	border-left: 4px solid rgb(255, 102, 0)
+
+.img_block_text 
+	padding: 20px
+	float: left
+	box-sizing: border-box
+	width: 600px
+
+.floatleft 
+	float: left
+	margin: 0 15px 15px 0 
+
+.floatright 
+	float: right
+	margin: 0 0 15px 15px
+
+.price_table
+	font-family: RobotoB 
+	width: 100%
+	margin-top: 20px
+	margin-bottom: 30px
+	border: 2px solid #18487B 
+	border-radius: 4px 
+	td 
+		padding: 10px 15px
+		box-sizing: border-box
+		vertical-align: middle
+		border-bottom: 1px solid #dddfe0 
+
+	tr 
+		&:first-child 
+			td 
+				font-family: RobotoB
+				font-size: 15px
+				background-color: #18487B
+				padding: 15px
+				color: #fff
+				border-right: none
+
+	td 
+		padding: 10px 15px
+		font-size: 15px
+		line-height: 1
+		font-family: Roboto
+		color: #2f2f2f
+		&:first-child
+			font-family: RobotoB
+			color: #18487b
+			border-right: 1px solid #dddfe0
+		&:nth-child(2n) 
+	  	border-right: 1px solid #dddfe0
+		&:nth-child(3n) 
+			color: #f03226
+			font-family: RobotoB
+		
+			
+	tbody 
+		tr 
+			color: rgb(47, 47, 47)
+			font-family: MuseoSansCyrl500
+			font-size: 15px
+		td 
+			&:nth-child(2n-1) 
+				width: 50%
+			&:nth-child(2n) 
+				width: 30%
+
+.price_table.inner_table
+	tr
+		&:first-child 
+			td 
+				color: #FFF 
+	td
+		&:nth-child(2n) 
+			color: rgb(132, 132, 132) 
+		&:nth-child(3n) 
+			color: rgb(255, 102, 0)
+		
+		
+.content			
+	.last_news
+		color: #000
+		font-family: Roboto  
+		margin-top: 45px
+		.like_h3 
+			color: #000
+			font-family: Roboto
+			font-size: 30px
+			margin-bottom: 30px
+		ul
+			li 
+				padding-left: 0
+				background: none
+				overflow: hidden
+				margin-bottom: 35px
+				font-family: Roboto
+				font-size: 14px
+				&:last-child 
+					margin-bottom: 0
+					 		
+		a
+			color: black
+			font-family: RobotoM
+			font-size: 16px
+			text-decoration: underline
+			margin-bottom: 15px
+			display: block
+			&:hover 
+				text-decoration: none
+		p 
+			line-height: 1.3				
+					
+		.all_lnews_link 
+			display: block
+			text-align: left
+			color: #18487b
+			font-family: RobotoM
+			font-size: 14px
+			text-decoration: underline
+			margin-top: 30px
+			&:hover 
+				text-decoration: none
+
+.img_news 
+	overflow: hidden
+	border-radius:  4px
+	float: left
+	margin-right: 25px
+
+	
+.left_form
+	width: 270px
+	background-color: #f03226
+	box-sizing: border-box
+	padding: 25px 30px 35px 30px
+	position: relative
+	border-radius:  4px
+	margin-bottom: 30px
+	.like_h3 
+		color: #fff
+		font-family: Roboto
+		font-size: 24px
+		margin-bottom: 25px
+		text-align: center
+		
+	input 
+		box-sizing: border-box
+		height: 45px
+		width: 100%
+		background-color: #f03226
+		border: none
+		padding: 0 18px
+		color: #fff
+		font-family: Roboto
+		font-size: 15px
+		margin-bottom: 14px
+		border: 2px solid #fff
+		border-radius:  4px
+	input::-moz-placeholder
+		color: #FFF 
+	input::-webkit-input-placeholder
+		color: #FFF 
+		
+	textarea 
+		box-sizing: border-box
+		width: 100%
+		height: 105px
+		background-color: #f03226
+		border: none
+		padding: 10px 18px
+		color: #fff
+		font-family: Roboto
+		font-size: 15px
+		margin-bottom: 15px
+		border: 2px solid #fff
+		border-radius:  4px
+	
+	textarea::-moz-placeholder
+		color: #FFF 
+	textarea::-webkit-input-placeholder
+		color: #FFF 
+
+	button 
+		width: 100%
+		height: 45px
+		background-color: #fff
+		border: none
+		text-align: center
+		box-sizing: border-box
+		color: #f03226
+		font-family: RobotoB
+		font-size: 15px
+		line-height: 18px
+		text-transform: uppercase
+		border-radius:  4px
+		
+.left_widget_vk 
+	width: 270px
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 20px
+	
+.left_news 
+	.like_h3
+		font-style: 18px
+		font-family: MuseoSansCyrl900
+		margin-bottom: 20px
+	li 
+		margin-bottom: 25px
+	
+	a 
+		font-size: 15px
+		font-family: MuseoSansCyrl300
+		text-decoration: underline
+		color: #000 
+		&:hover 
+			text-decoration: none		
+
+	.all_articles 
+		display: block
+		width: 121px
+		box-sizing: border-box
+		height: 40px
+		background-color: rgb(255, 102, 0)
+		padding: 15px 24px
+		font-family: MuseoSansCyrl700
+		font-size: 12px
+		text-transform: uppercase
+		color: #FFF 
+		text-decoration: none
+		text-align: center
+		float: left
+
+.footer 
+	background-color: #f03226
+	color: #fff
+	overflow: hidden
+	border-top: 1px solid #F60 
+	padding: 25px 0 20px 0
+	height: 65px
+	box-sizing: border-box
+
+.copy
+	font-family: Roboto
+	font-size: 12px 
+	
+.footer_adress
+	font-family: Roboto
+	font-size: 12px
+	padding-left: 20px
+	background: url("../img/top_icon_adress.png") no-repeat left center
+	min-height: 16px
+	line-height: 1.2
+	overflow: hidden
+	float: right
+
+.footer_phone 
+	font-family: Roboto
+	font-size: 18px
+	padding-left: 20px
+	background: url("../img/top_icon_phone.png") no-repeat left center
+	float: right
+	span
+		font-size: 12px
+		font-family: MuseoSansCyrl500
+
+.footer_mail
+	a
+		float: right
+		color: #fff
+		font-family: Roboto
+		font-size: 14px
+		text-decoration: underline
+		padding-left: 20px
+		background: url("../img/top_icon_mail.png") no-repeat left center
+		
+.content
+	font-family: Roboto
+	font-size: 15px 
+.bread 
+	margin-top: 12px
+	margin-bottom: 25px
+	width: 100%
+	padding: 0
+	box-sizing: border-box
+	margin-bottom: 12px
+	overflow: hidden
+	padding-bottom: 3px
+	li 
+		float: left
+		font-size: 14px
+		font-family: Roboto
+		margin-bottom: 10px
+		margin: 0
+		padding: 0
+		line-height: 1
+		background: none
+		&:before 
+			content: "" 
+		
+		a
+			font-size: 14px
+			color: #caedff
+			text-decoration: underline
+			&:hover 
+				text-decoration: none
+			
+			&:after 
+				line-height: 1
+				font-size: 12px
+				font-family: Roboto
+				content: "/"
+				color: #caedff 
+				float: right
+				margin-right: 10px
+				margin-left: 10px
+				display: inline
+		span
+			color: #fff
+
+.content 
+	li 
+		margin-bottom: 13px
+		min-height: 20px
+	ul 
+		li 
+			padding-left: 25px
+			background: url("../img/def.png") no-repeat left center 		
+	ol 
+		list-style-type: none
+		counter-reset: num
+		li
+			line-height: 1.7
+			&:before 
+				content: counter(num) ' '
+				counter-increment: num
+				color: #fff
+				font-family: RobotoBL
+				font-size: 14px							
+				text-align: center
+				display: block
+				float: left
+				line-height: 1.8
+				margin-right: 10px
+				width: 25px
+				height: 25px
+				background-color: #f03226
+				border-radius: 5px
+
+.white_content
+	border-radius:  4px
+	background-color: #fff
+	overflow: hidden
+	padding: 20px
+	box-sizing: border-box 
+
+.lists 
+	overflow: hidden
+
+.br5 
+	border-right: 5px
+
+.imgs 
+	margin-bottom: 50px
+	overflow: hidden
+
+blockquote
+	background-color: #18487b
+	color: #fff
+	font-family: Roboto
+	font-size: 15px
+	line-height: 21px
+	padding: 25px
+	box-sizing: border-box
+	width: 100%
+	position: relative
+	border-radius:  4px
+	overflow: hidden
+	b 
+		color: #fff
+		font-family: RobotoMI
+		font-weight: normal
+		font-size: 15px
+	
+.m0 
+	margin: 0 !important
+
+.ml0 
+	margin-left: 0 !important
+	
+.mb0 
+	margin-bottom: 0 !important
+
+.bord4 
+	border-radius:  4px
+	overflow: hidden
+
+
+.tags 
+	height: 50px
+	overflow: hidden
+	padding-top: 23px
+	border-top: 1px solid #e0e0e0
+	box-sizing: border-box 
+	a
+		color: rgb(54, 166, 207)
+		font-family: MuseoSansCyrl700
+		font-size: 14px
+		text-decoration: underline
+		margin-right: 30px
+		display: inline-block
+		&:hover 
+			text-decoration: none
+	.all_tags, .hide_tags 
+		color: black
+	
+.hide_tags 
+	display: none
+
+.clear 
+	clear: both
+
+.right 
+	//float: right !important
+
+.left 
+	//float: left !important
+
+
+
+@import _media
