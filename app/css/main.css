@@ -185,7 +185,8 @@ ul {
           box-shadow: 0 0 0 15px #ffffff, 0 1px 5px 18px rgba(0, 0, 0, 0.3);
   margin-bottom: 30px;
   position: relative;
-  margin-top: 15px; }
+  margin-top: 15px;
+  padding-bottom: 30px; }
 
 .corner {
   position: absolute;
@@ -556,7 +557,6 @@ b, strong {
   box-sizing: border-box; }
 
 .main_content {
-  padding-bottom: 30px;
   overflow: hidden;
   padding-top: 20px; }
 
@@ -678,7 +678,9 @@ h1 {
 .content .last_news {
   color: #000;
   font-family: Roboto;
-  margin-top: 45px; }
+  margin-top: 45px;
+  margin-bottom: 30px;
+  overflow: hidden; }
   .content .last_news .like_h3 {
     color: #35446e;
     font-family: "Trebuchet MS";
@@ -733,7 +735,10 @@ h1 {
   margin-right: 0px;
   width: 375px;
   font-size: 0;
-  height: 136px; }
+  height: 136px;
+  border: 1px solid #C1B486;
+  -webkit-box-shadow: 0 0 0 15px #ffffff;
+          box-shadow: 0 0 0 15px #ffffff; }
 
 .left_form {
   width: 250px;
@@ -800,45 +805,20 @@ h1 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-.left_news .like_h3 {
-  font-style: 18px;
-  font-family: MuseoSansCyrl900;
-  margin-bottom: 20px; }
-
-.left_news li {
-  margin-bottom: 25px; }
-
-.left_news a {
-  font-size: 15px;
-  font-family: MuseoSansCyrl300;
-  text-decoration: underline;
-  color: #000; }
-  .left_news a:hover {
-    text-decoration: none; }
-
-.left_news .all_articles {
-  display: block;
-  width: 121px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  height: 40px;
-  background-color: #ff6600;
-  padding: 15px 24px;
-  font-family: MuseoSansCyrl700;
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #FFF;
-  text-decoration: none;
+.partners {
   text-align: center;
-  float: left; }
+  margin: 10px 0; }
+  .partners .like_h3 {
+    text-align: left;
+    color: #35446e;
+    font-family: "Trebuchet MS";
+    font-size: 30px;
+    margin-bottom: 20px; }
 
 .footer {
-  background-color: #f03226;
   color: #fff;
   overflow: hidden;
-  border-top: 1px solid #F60;
   padding: 25px 0 20px 0;
-  height: 65px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -850,7 +830,7 @@ h1 {
   font-family: Roboto;
   font-size: 12px;
   padding-left: 20px;
-  background: url("../img/top_icon_adress.png") no-repeat left center;
+  background: url("../img/top_icon_adress2.png") no-repeat left center;
   min-height: 16px;
   line-height: 1.2;
   overflow: hidden;
@@ -860,7 +840,7 @@ h1 {
   font-family: Roboto;
   font-size: 18px;
   padding-left: 20px;
-  background: url("../img/top_icon_phone.png") no-repeat left center;
+  background: url("../img/top_icon_phone2.png") no-repeat left center;
   float: right; }
   .footer_phone span {
     font-size: 12px;
@@ -873,7 +853,7 @@ h1 {
   font-size: 14px;
   text-decoration: underline;
   padding-left: 20px;
-  background: url("../img/top_icon_mail.png") no-repeat left center; }
+  background: url("../img/top_icon_mail2.png") no-repeat left center; }
 
 .content {
   font-family: Roboto;
