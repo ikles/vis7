@@ -494,42 +494,46 @@ b, strong {
   margin-bottom: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 0;
   width: 270px;
-  overflow: hidden; }
+  overflow: hidden;
+  border: 1px solid #dfdfdf; }
+  .left_mnu ul {
+    padding: 13px 17px; }
   .left_mnu .like_h2 {
-    font-family: MuseoSansCyrl900;
-    color: white;
-    padding: 20px;
-    font-size: 18px; }
+    text-align: center;
+    font-family: "Trebuchet MS";
+    color: #35446e;
+    padding: 15px 35px;
+    font-size: 16px;
+    border-bottom: 1px solid #dfdfdf;
+    background: url("../img/h2_bg1.png") no-repeat left 15px center, url("../img/h2_bg2.png") no-repeat right 15px center; }
   .left_mnu li {
-    float: left;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    margin-right: 2px;
-    margin-bottom: 11px; }
+    margin-bottom: 17px;
+    background: url("../img/def.png") no-repeat left center;
+    padding-left: 15px; }
+    .left_mnu li:last-child {
+      margin-bottom: 0; }
   .left_mnu a {
-    color: #caedff;
-    font-family: Roboto;
-    font-size: 15px;
+    color: #000;
+    font-family: "Trebuchet MS";
+    font-size: 14px;
     line-height: 30px;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     line-height: 1;
     display: block;
-    padding: 5px 10px;
-    text-decoration: underline;
+    text-decoration: none;
     border: 1px solid transparent;
     -webkit-border-radius: 4px;
             border-radius: 4px; }
     .left_mnu a:hover {
-      color: #FFF;
-      text-decoration: none;
-      border: 1px solid #fff; }
+      color: #35446e;
+      text-decoration: none; }
   .left_mnu .active a {
-    color: #FFF;
+    color: #35446e;
     text-decoration: none;
-    border: 1px solid #fff;
     background: none; }
 
 .about {
@@ -678,7 +682,7 @@ h1 {
     padding-left: 0;
     background: none;
     overflow: hidden;
-    margin-bottom: 35px;
+    margin-bottom: 10px;
     font-size: 14px;
     background-color: #F3F3F3;
     font-family: "Trebuchet MS";
