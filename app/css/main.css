@@ -166,12 +166,16 @@ ul {
   font-family: OpenSans;
   src: url(../fonts/OpenSans-Regular.ttf); }
 
+@font-face {
+  font-family: OpenSansSB;
+  src: url(../fonts/OpenSans-Semibold.ttf); }
+
 .wrapper {
   width: 100%;
   margin: auto;
   overflow: hidden;
   background: #000 url("../img/bg.jpg") no-repeat top center;
-  background-size: 100%;
+  background-size: cover;
   padding-top: 15px; }
 
 .all_center {
@@ -183,10 +187,9 @@ ul {
   border: 1px solid #e7d48d;
   -webkit-box-shadow: 0 0 0 15px #ffffff, 0 1px 5px 18px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 0 15px #ffffff, 0 1px 5px 18px rgba(0, 0, 0, 0.3);
-  margin-bottom: 30px;
+  margin-bottom: 0;
   position: relative;
-  margin-top: 15px;
-  padding-bottom: 30px; }
+  margin-top: 15px; }
 
 .corner {
   position: absolute;
@@ -229,7 +232,7 @@ ul {
 .all_center {
   max-width: 1170px;
   width: 100%;
-  margin: 15px auto 30px auto;
+  margin: 15px auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
@@ -558,7 +561,8 @@ b, strong {
 
 .main_content {
   overflow: hidden;
-  padding-top: 20px; }
+  padding-top: 20px;
+  padding-bottom: 25px; }
 
 .content {
   width: 885px;
@@ -807,7 +811,9 @@ h1 {
 
 .partners {
   text-align: center;
-  margin: 10px 0; }
+  margin: 10px 0;
+  position: relative;
+  z-index: 1000; }
   .partners .like_h3 {
     text-align: left;
     color: #35446e;
@@ -818,16 +824,18 @@ h1 {
 .footer {
   color: #fff;
   overflow: hidden;
-  padding: 25px 0 20px 0;
+  padding: 15px 15px 15px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
+  .footer .w_1200 {
+    overflow: hidden; }
 
 .copy {
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 12px; }
 
 .footer_adress {
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 12px;
   padding-left: 20px;
   background: url("../img/top_icon_adress2.png") no-repeat left center;
@@ -837,8 +845,8 @@ h1 {
   float: right; }
 
 .footer_phone {
-  font-family: Roboto;
-  font-size: 18px;
+  font-family: OpenSansSB;
+  font-size: 21px;
   padding-left: 20px;
   background: url("../img/top_icon_phone2.png") no-repeat left center;
   float: right; }
@@ -847,9 +855,8 @@ h1 {
     font-family: MuseoSansCyrl500; }
 
 .footer_mail a {
-  float: right;
   color: #fff;
-  font-family: Roboto;
+  font-family: OpenSans;
   font-size: 14px;
   text-decoration: underline;
   padding-left: 20px;
@@ -1006,6 +1013,26 @@ blockquote {
 
 .clear {
   clear: both; }
+
+.bot_mnu {
+  margin-top: 10px; }
+  .bot_mnu li {
+    float: left;
+    margin: 0 30px; }
+    .bot_mnu li:first-child {
+      margin-left: 0; }
+    .bot_mnu li:last-child {
+      margin-right: 0; }
+  .bot_mnu a {
+    color: white;
+    font-family: "Trebuchet MS";
+    font-size: 15px; }
+
+.social {
+  float: right; }
+
+.w_1200_foot_2 {
+  margin-top: 25px; }
 
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
