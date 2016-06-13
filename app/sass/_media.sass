@@ -59,7 +59,7 @@
 
 	.logo 
 		position: relative
-		z-index: 1000
+		z-index: 101
 		font-size: 0
 		margin-left: 5px
 		
@@ -147,7 +147,7 @@
 	
 	.col-mnu 
 		float: right !important
-		z-index: 101 
+		z-index: 102 
 	
 	.col-contacts 
 		float: left !important
@@ -232,6 +232,14 @@
 								
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) 
+	.bot_mnu
+		li 
+			margin-right: 10px
+			a 
+				font-size: 13px
+			
+		
+
 	.about 
 		background-size: 100% 	
 
@@ -254,6 +262,26 @@
 			margin-bottom: 10px !important
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) 	
+	.col-mnu
+		margin-top: 20px
+
+	.col-top
+		float: left !important
+
+	.bot_mnu
+		margin-bottom: 10px
+		li 
+			float: none
+			margin-bottom: 10px
+			a 
+				font-size: 15px
+			
+
+	.social 
+		text-align: center
+		float: none
+		display: block
+
 	.footer
 		height: auto
 
@@ -324,13 +352,6 @@
 
 	.top_slider_wrap 
 	
-	.col-mnu 
-		position: absolute
-		top: 0
-		right: 0
-		z-index: 100
-		margin-top: 0
-
 	.top_contacts
 		text-align: center
 		> div 
@@ -352,7 +373,7 @@
 			text-align: center
 			float: none
 	.top_adress 
-		margin-bottom: 0
+		margin-bottom: 10px
 		
 	.top, .top .w_1200 
 		height: auto
@@ -368,6 +389,9 @@
 	
 
 @media only screen and (max-width : 640px) 
+	.wrapper 
+		padding-top: 0
+
 	.slider 
 		img 
 			display: none
