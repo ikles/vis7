@@ -2,15 +2,41 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) 
+	.img_news 
+		padding-top: 15px
+		padding-left: 15px
+
+	.bot_mnu
+		ul 
+			display: block
+			text-align: center
+		li
+			display: inline-block
+			margin: 0
+			margin-right: 30px
+			&:last-child 
+				margin-right: 0
+			
+
+	.img_news 
+		width: 40%
+		img
+			width: 100%
+	
+	.text_news
+		width: 60%
+
+	.img_news::after 
+		display: none
+
 	.partners img 
 		max-width: 100% 
 	
 	.col-top
-		margin-top: 35px
+		margin-top: 20px
 		
 	.col-mnu 
-		margin-top: 20px
-	
+		margin-top: 15px
 
 	.all_center 
 		width: 94%	 
@@ -118,7 +144,6 @@
 		float: left
 		text-align: left
 		margin-right: 40px
-		margin-left: 20px
 	
 	.col-mnu 
 		float: right !important
