@@ -1085,6 +1085,17 @@ blockquote {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
+  .content .bread {
+    margin-bottom: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    overflow: hidden; }
+    .content .bread ul {
+      margin-left: 0;
+      overflow: hidden;
+      padding-left: 5px; }
+  .border_gold:after {
+    display: none; }
   .img_news {
     padding-top: 15px;
     padding-left: 15px; }
@@ -1449,7 +1460,8 @@ blockquote {
 
 @media only screen and (max-width: 400px) {
   .price_table td {
-    font-size: 11px; }
+    font-size: 11px !important;
+    font-weight: normal !important; }
   .slider_text {
     top: 40px; } }
 
